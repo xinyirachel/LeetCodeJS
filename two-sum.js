@@ -7,11 +7,11 @@
 
 
 
-let twoSum = function(nums, target){
-  for (let i = nums.length -1 ; 1 >= 0; i--){
-    for (let k = 0; k < i; i++){
-      if ( addition(nums[i]+nums[k]) === target){
-        return [i,k];
+let twoSum = function twoSum(nums, target){
+  for (let i = nums.length -1 ; i >= 0; i--){
+    for (let j = 0; j < i; j++){
+      if ( addition(nums[i]+nums[j]) === target){
+        return [i,j];
       }
     }
   }
@@ -22,3 +22,6 @@ let addition = function(a, b) {
 };
 
 
+
+
+console.log(twoSum([2,7,5,6,7,7],11));
